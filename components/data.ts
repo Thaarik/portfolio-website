@@ -159,6 +159,41 @@ export const skills = [
     definition:
       "A framework for building native mobile applications using React and JavaScript.",
   },
+  {
+    id: 16,
+    name: "Express.js",
+    logo: "/asset/expressjs.png",
+    definition:
+      "A minimal and flexible Node.js web application framework for building APIs and web applications.",
+  },
+  {
+    id: 17,
+    name: "Node.js",
+    logo: "/asset/nodejs.png",
+    definition:
+      "A runtime environment for executing JavaScript code server-side, built on Chrome's V8 engine.",
+  },
+  {
+    id: 18,
+    name: "MongoDB",
+    logo: "/asset/Mongodb.png",
+    definition:
+      "A NoSQL database known for its scalability and flexibility in storing data as JSON-like documents.",
+  },
+  {
+    id: 19,
+    name: "MySQL",
+    logo: "/asset/pngwing.png",
+    definition:
+      "A widely-used open-source relational database management system for structured data storage.",
+  },
+  {
+    id: 20,
+    name: "PostgreSQL",
+    logo: "/asset/postgresql.png",
+    definition:
+      "An advanced open-source relational database known for its extensibility and support for complex queries.",
+  },
 ];
 
 export const projects = [
