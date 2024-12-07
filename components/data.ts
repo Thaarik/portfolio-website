@@ -7,7 +7,8 @@ export const experience = [
     title: "Research Software Engineer",
     company: "Queen Mary Univeristy pf London",
     location: "London, UK",
-    description: "React, Java, TypeScript, Spring Boot, Oracle DB, PostgreSQL, Docker, MinIO",
+    description:
+      "React, Java, TypeScript, Spring Boot, Oracle DB, PostgreSQL, Docker, MinIO",
   },
   {
     id: 2,
@@ -133,7 +134,7 @@ export const skills = [
   {
     id: 12,
     name: "Tailwind CSS",
-    logo: "/asset/TailwindCss.png",
+    logo: "/asset/tailwind.png",
     definition:
       "A utility-first CSS framework for creating custom designs efficiently.",
   },

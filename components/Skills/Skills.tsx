@@ -13,7 +13,6 @@ export const Skills = () => {
     setIsMounted(true);
   }, []);
 
-  
   const textColorClass =
     resolvedTheme === "light" ? "text-gray-800" : "text-white";
   const cardBgClass = resolvedTheme && "bg-none";
@@ -53,9 +52,11 @@ export const Skills = () => {
                   <Image
                     alt={skill.name}
                     src={skill.logo}
-                    layout="responsive"
-                    width={80}
-                    height={80}
+                    fill
+                    sizes="200px"
+                    style={{
+                      objectFit: "contain",
+                    }}
                   />
                 </div>
                 <p

@@ -15,16 +15,9 @@ type ProjectCardProps = {
     definition: string;
     liveUrl: string;
   };
-  handleLike: (index: number) => void;
-  likes: number[];
 };
 
-const ProjectCard = ({
-  index,
-  project,
-  handleLike,
-  likes,
-}: ProjectCardProps) => {
+const ProjectCard = ({ index, project }: ProjectCardProps) => {
   const { theme, setTheme, resolvedTheme } = useTheme();
   const [isMounted, setIsMounted] = useState(false);
 
@@ -59,9 +52,10 @@ const ProjectCard = ({
             <Image
               alt={project.name}
               src={project.image}
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: "cover" }}
               className="rounded-md"
+              sizes="700px"
             />
           </div>
           <div className="flex flex-col items-center mt-4">
@@ -76,7 +70,7 @@ const ProjectCard = ({
           className={`w-full h-full flex flex-col p-4 ${cardBg} space-y-4 md:space-y-6`}
         >
           {/* Project Definition */}
-          <div className="flex-1 text-sm md:text-base text-justify leading-snug">
+          <div className="flex-1 text-xs md:text-base text-justify leading-snug">
             <p className={`${textColor}`}>{project.definition}</p>
           </div>
 
@@ -105,12 +99,6 @@ const ProjectCard = ({
                 View Live
               </a>
             </div>
-
-            {/* Like Button */}
-            <div className="flex items-center space-x-2 text-sm md:text-base text-pink-500 cursor-pointer">
-              <span onClick={() => handleLike(index)}>❤️</span>
-              <span>{likes[index]}</span>
-            </div>
           </div>
         </div>
       }
@@ -134,13 +122,7 @@ export const Projects = () => {
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            index={index}
-            project={project}
-            handleLike={handleLike}
-            likes={likes}
-          />
+          <ProjectCard key={index} index={index} project={project} />
         ))}
       </div>
     </div>

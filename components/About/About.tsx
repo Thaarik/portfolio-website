@@ -1,6 +1,5 @@
 import { InstagramLogoIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import TypeEffect from "./TypeEffect";
 
@@ -50,7 +49,14 @@ export const About = () => {
         </p>
       </div>
       <div className="m-2 h-auto">
-        <Image src={"/asset/main.png"} alt="image" width={500} height={500} />
+        <Image
+          src={"/asset/main.png"}
+          alt="image"
+          width={700}
+          height={700}
+          priority
+        />
+        <a href="https://www.vecteezy.com/free-png/man-with-laptop"></a>
       </div>
     </div>
   );

@@ -19,6 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
+
       <body className={inter.className}>
         <div className="w-screen h-screen overflow-y-auto overflow-x-hidden relative scroll-smooth">
           <div className="w-screen h-auto flex flex-row md:grid md:grid-cols-5 relative">
