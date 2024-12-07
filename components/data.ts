@@ -7,7 +7,7 @@ export const experience = [
     title: "Research Software Engineer",
     company: "Queen Mary Univeristy pf London",
     location: "London, UK",
-    description: "React, Java, TypeScript, Spring Boot, Oracle DB, PostgreSQL",
+    description: "React, Java, TypeScript, Spring Boot, Oracle DB, PostgreSQL, Docker, MinIO",
   },
   {
     id: 2,
