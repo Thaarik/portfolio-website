@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar/Navbar";
 import { ThemeProvider } from "@/components/Theme/theme-provider";
 import { Footer } from "@/components/Footer/Footer";
+import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -36,6 +37,7 @@ export default function RootLayout({
               </div>
               <div className="w-full md:w-[80%] h-auto md:h-[100vh] flex flex-col absolute right-0 overflow-x-hidden scroll-smooth">
                 {children}
+                <Analytics />
                 <Footer />
               </div>
             </ThemeProvider>
