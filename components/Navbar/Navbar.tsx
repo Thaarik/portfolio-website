@@ -9,7 +9,7 @@ import {
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 import { ModeToggle } from "../Theme/theme-toggle";
-import { MailIcon, Menu, X, XIcon } from "lucide-react";
+import { MailIcon, Menu, X } from "lucide-react";
 import { useTheme } from "next-themes";
 
 export function Navbar() {
@@ -132,7 +132,7 @@ export function Navbar() {
               rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
             >
-              <XIcon
+              <TwitterLogoIcon
                 className={`w-6 h-6 ${textColor} cursor-pointer mt-2 m-4 mb-4`}
               />
             </a>
