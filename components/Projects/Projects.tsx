@@ -5,16 +5,11 @@ import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import ReactFlipCard from "reactjs-flip-card";
 import { useQRCode } from "next-qrcode";
-import { projects } from "../data";
+import type { Project } from "@/lib/portfolio-types";
 
 type ProjectCardProps = {
   index: number;
-  project: {
-    name: string;
-    image: string;
-    definition: string;
-    liveUrl: string;
-  };
+  project: Project;
 };
 
 const ProjectCard = ({ index, project }: ProjectCardProps) => {
@@ -106,7 +101,7 @@ const ProjectCard = ({ index, project }: ProjectCardProps) => {
   );
 };
 
-export const Projects = () => {
+export const Projects = ({ projects }: { projects: Project[] }) => {
   const [likes, setLikes] = useState(() => projects.map(() => 0));
 
   const handleLike = (index: number) => {

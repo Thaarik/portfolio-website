@@ -4,11 +4,12 @@ export const experience = [
     styleType: "work",
     date: "2023 - present",
     visible: true,
-    title: "Research Software Engineer",
-    company: "Queen Mary Univeristy pf London",
+    title: "Software Engineer",
+    company: "Queen Mary University of London",
     location: "London, UK",
     description:
-      "React, Java, TypeScript, Spring Boot, Oracle DB, PostgreSQL, Docker, MinIO",
+      "React, Java, Python, TypeScript/JavaScript, Spring Boot, Oracle DB, PostgreSQL, Docker, MinIO, Redis, RabbitMQ, GitHub Actions, AWS S3, Microsoft Azure",
+    notes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nunc, eget aliquam nisl nunc ut nunc. Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nunc, eget aliquam nisl nunc ut nunc.",
   },
   {
     id: 2,
@@ -16,32 +17,25 @@ export const experience = [
     date: "2022 - 2023 ",
     visible: true,
     title: "Student",
-    school: " Queen Mary University of London",
+    school: "Queen Mary University of London",
     location: "London, UK",
     description: "Master of Science - Computer Science",
+    notes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nunc, eget aliquam nisl nunc ut nunc. Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nunc, eget aliquam nisl nunc ut nunc.",
   },
   {
     id: 3,
     styleType: "work",
-    date: "2020 - 2022",
+    date: "2019 - 2022",
     visible: true,
-    title: "Programmer Analyst - Software Engineer",
-    comapny: "Cognizant",
+    title: "Software Engineer",
+    company: "Cognizant",
     location: "Chennai, India",
-    description: "React, Java, Spring Boot, Oracle DB, Elixir",
+    description:
+      "React, Java, Python, Spring Boot, Microsoft SQL Server, Elixir",
+      notes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nunc, eget aliquam nisl nunc ut nunc. Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nunc, eget aliquam nisl nunc ut nunc.",
   },
   {
     id: 4,
-    styleType: "work",
-    date: "2020 - 2020 (6 months)",
-    visible: true,
-    title: "Intern - Software Engineer",
-    comapny: "Cognizant",
-    location: "Chennai, India",
-    description: "React, Java, Spring Boot, Oracle DB, Elixir",
-  },
-  {
-    id: 5,
     styleType: "education",
     date: "2016 - 2020 ",
     visible: true,
@@ -50,6 +44,7 @@ export const experience = [
     location: "Chennai, India",
     description:
       "Bachelor of Engineering - Electronics and Communication Engineering",
+      notes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nunc, eget aliquam nisl nunc ut nunc. Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nunc, eget aliquam nisl nunc ut nunc.",
   },
 ];
 
@@ -193,6 +188,34 @@ export const skills = [
     logo: "/asset/postgresql.png",
     definition:
       "An advanced open-source relational database known for its extensibility and support for complex queries.",
+  },
+  {
+    id: 21,
+    name: "FastAPI",
+    logo: "/asset/FastAPI.png",
+    definition:
+      "A modern, fast (high-performance) web framework for building APIs with Python.",
+  },
+  {
+    id: 22,
+    name: "Flask",
+    logo: "/asset/Flask.png",
+    definition:
+      "A lightweight web framework for building web applications with Python.",
+  },
+  {
+    id: 23,
+    name: "Redis",
+    logo: "/asset/Redis.png",
+    definition:
+      "A high-performance, in-memory data structure store used as a database, cache, and message broker.",
+  },
+  {
+    id: 24,
+    name: "RabbitMQ",
+    logo: "/asset/RabbitMQ.png",
+    definition:
+      "A message broker that facilitates communication between different parts of a distributed system.",
   },
 ];
 

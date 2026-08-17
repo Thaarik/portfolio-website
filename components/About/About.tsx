@@ -8,19 +8,25 @@ export const About = () => {
     <div className="w-full min-h-screen flex flex-col md:flex-row pt-16 md:pt-24 justify-evenly items-center">
       <div className="text-center md:text-left m-12">
         <h1 className="text-5xl font-extrabold mb-4 text-yellow-400">
-          Hi, I&apos;m {TypeEffect(["Thaarik Ahamed"], false, false)} 🚀 💻 📷
+          Hi, I&apos;m{" "}
+          <TypeEffect
+            strings={["Thaarik Ahamed"]}
+            shouldDelete={false}
+            loop={false}
+          />{" "}
+          🚀 💻 📷
         </h1>
         <h2 className="text-3xl font-bold mb-6 text-green-500">
-          {TypeEffect(
-            [
+          <TypeEffect
+            strings={[
               "Software Engineer",
               "Software Developer",
               "Gamer",
               "Photographer",
-            ],
-            true,
-            true
-          )}
+            ]}
+            shouldDelete={true}
+            loop={true}
+          />
         </h2>
         <p className="text-lg mb-4">
           Passionate about building efficient, user-friendly applications that

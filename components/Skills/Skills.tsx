@@ -1,10 +1,12 @@
+"use client";
+
 import { useTheme } from "next-themes";
 import React, { useState, useEffect } from "react";
 import ReactFlipCard from "reactjs-flip-card";
 import Image from "next/image";
-import { skills } from "../data";
+import type { Skill } from "@/lib/portfolio-types";
 
-export const Skills = () => {
+export const Skills = ({ skills }: { skills: Skill[] }) => {
   const { theme, resolvedTheme } = useTheme();
   const [isMounted, setIsMounted] = useState(false);
   const [hydrated, setHydrated] = useState(false);

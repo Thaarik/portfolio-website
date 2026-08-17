@@ -4,9 +4,9 @@ import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import { ExperienceCard } from "./ExperienceCard";
-import { experience } from "../data";
+import type { Experience as ExperienceItem } from "@/lib/portfolio-types";
 
-export const Experience = () => {
+export const Experience = ({ experience }: { experience: ExperienceItem[] }) => {
   const { theme } = useTheme();
   const [hydrated, setHydrated] = useState(false);
   useEffect(() => {
@@ -16,6 +16,7 @@ export const Experience = () => {
   if (!hydrated) {
     return null;
   }
+
   return (
     <div id="experience" className="min-h-screen w-[80%] pt-24 md:pt-12">
       <p className="text-center font-bold text-4xl m-5 mb-10">
@@ -33,10 +34,11 @@ export const Experience = () => {
             visible={e.visible}
             date={e.date}
             title={e.title}
-            company={e.comapny}
+            company={e.company}
             school={e.school}
             location={e.location}
             description={e.description}
+            notes={e.notes}
           />
         ))}
       </VerticalTimeline>

@@ -1,15 +1,19 @@
+"use client";
+
 import Typewriter from "typewriter-effect";
 
-const TypeEffect = (
-  strings: string[],
-  shouldDelete: boolean,
-  loop: boolean
-) => {
+type TypeEffectProps = {
+  strings: string[];
+  shouldDelete: boolean;
+  loop: boolean;
+};
+
+const TypeEffect = ({ strings, shouldDelete, loop }: TypeEffectProps) => {
   return (
     <Typewriter
       options={{
         autoStart: true,
-        loop: loop,
+        loop,
       }}
       onInit={(typewriter) => {
         strings.forEach((string) => {
@@ -19,6 +23,7 @@ const TypeEffect = (
             typewriter.pauseFor(2000).deleteAll().pauseFor(1000);
           }
         });
+
         typewriter.start();
       }}
     />
