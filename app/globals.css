@@ -6,6 +6,27 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Mobile: align timeline dates cleanly inside the card */
+@media (max-width: 1169px) {
+  .vertical-timeline-element-date {
+    float: none !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 10px 16px 0 !important;
+    text-align: center;
+    color: inherit;
+    opacity: 0.75;
+  }
+
+  .vertical-timeline-element > div {
+    min-height: 0 !important;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

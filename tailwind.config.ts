@@ -83,20 +83,29 @@ const config = {
   					width: '6ch'
   				}
   			},
-  			blink: {
-  				from: {
-  					'border-right-color': 'transparent'
-  				},
-  				to: {
-  					'border-right-color': 'black'
-  				}
-  			},
-  		},
-  		animation: {
-  			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out',
-  			typing: 'typing 1s steps(10), blink 1s infinite',
-  		},
+   			blink: {
+   				from: {
+   					'border-right-color': 'transparent'
+   				},
+   				to: {
+   					'border-right-color': 'black'
+   				}
+   			},
+   			float: {
+   				'0%, 100%': {
+   					transform: 'translateY(0)'
+   				},
+   				'50%': {
+   					transform: 'translateY(-12px)'
+   				}
+   			},
+   		},
+   		animation: {
+   			'accordion-down': 'accordion-down 0.2s ease-out',
+   			'accordion-up': 'accordion-up 0.2s ease-out',
+   			typing: 'typing 1s steps(10), blink 1s infinite',
+   			float: 'float 6s ease-in-out infinite',
+   		},
   		fontFamily: {
   			satoshi: [
   				'Satoshi',

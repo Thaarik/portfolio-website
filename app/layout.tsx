@@ -28,7 +28,7 @@ export default function RootLayout({
           <div className="w-screen h-auto flex flex-row md:grid md:grid-cols-5 relative">
             <ThemeProvider
               attribute="class"
-              defaultTheme="system"
+              defaultTheme="light"
               enableSystem
               disableTransitionOnChange
             >

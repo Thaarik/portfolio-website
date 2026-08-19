@@ -20,7 +20,7 @@ export const Experience = ({ experience }: { experience: ExperienceItem[] }) => 
   return (
     <div id="experience" className="min-h-screen w-[80%] pt-24 md:pt-12">
       <p className="text-center font-bold text-4xl m-5 mb-10">
-        Work Experience
+        Experience
       </p>
       <VerticalTimeline
         animate={true}

@@ -54,7 +54,7 @@ export const About = () => {
           experimenting with new recipes 🥗!
         </p>
       </div>
-      <div className="m-2 h-auto">
+      <div className="m-2 h-auto animate-float">
         <Image
           src={"/asset/main.png"}
           alt="image"
